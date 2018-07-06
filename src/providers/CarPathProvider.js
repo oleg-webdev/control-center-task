@@ -1,6 +1,7 @@
 // @flow
 import { Container } from 'unstated';
 import differenceBy from 'lodash/differenceBy';
+import carPathMock from '../../mocks/carPathMock.json';
 
 type State = {
   carPath: boolean
@@ -8,21 +9,17 @@ type State = {
 
 export default class CarPathProvider extends Container<State> {
   state = {
-    activePath: { lat: 38.916072, lng: -77.048940 },
-    carPath: [
-      { lat: 38.915233, lng: -77.048559 },
-      { lat: 38.916072, lng: -77.048940 },
-      { lat: 38.916477, lng: -77.047706 },
-      { lat: 38.916752, lng: -77.046778 },
-      { lat: 38.915992, lng: -77.046290 },
-      { lat: 38.916026, lng: -77.045706 },
-    ],
+    activePath: carPathMock.data[2],
+    carPath: carPathMock.data,
     carPathPoints: [
-      { lat: 38.915233, lng: -77.048559 },
-      { lat: 38.916072, lng: -77.048940 },
+      carPathMock.data[2],
+      carPathMock.data[3],
     ],
   };
 
+  /**
+   * @param  {Object} data
+   */
   setActivePath = (data) => {
     this.setState({ activePath: data });
   }

@@ -20,7 +20,7 @@ const Map = () => (
             carMarkers={carpath.state.carPathPoints}
             activePath={carpath.state.activePath}
             googleMapURL={GOOGLE_API_URL}
-            loadingElement={<div style={{ height: '100%' }} />}
+            loadingElement={<div />}
             containerElement={<div style={{ height: '100%', flexBasis: '100%' }} />}
             mapElement={<div style={{ height: '100%' }} />}
           />

@@ -12,3 +12,8 @@ Also driver data is just json data.
 
 ```npm run dev``` or ```yarn dev```
 
+### BONUS: Testing Sidebar feature
+```npm run test``` or ```yarn test```
+
+Testing file located: ```<rootDir>src/providers/sidebar.test.js```
+

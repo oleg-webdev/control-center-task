@@ -9,7 +9,7 @@ import styles from './index.scss';
 const imgPath = '../../../src/assets/images/sidebar/';
 
 type SidebarProps = {
-  location: {pathname: string},
+  location: { pathname: string },
 }
 
 const SidebarNav = ({ location }: SidebarProps) => (

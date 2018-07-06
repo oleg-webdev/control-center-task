@@ -5,12 +5,18 @@
 
 .item {
   padding: 4px;
-  margin-bottom: 48px;
   cursor: pointer;
+
+  > a {
+    padding-bottom: 30px;
+    cursor: pointer;
+    display: block;
+  }
 
   > img {
     display: block;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   &:last-child {
