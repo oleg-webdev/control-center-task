@@ -1,0 +1,32 @@
+$font-size-mobile-xs:   0;
+$font-size-mobile-sm:   0;
+$font-size-mobile-md:   0;
+$font-size-mobile-lg:   0;
+$font-size-mobile-xl:   0;
+
+$font-size-xs:  0;
+$font-size-sm:  0;
+$font-size-md:  0;
+$font-size-lg:  0;
+$font-size-xl:  0;
+
+// mobile
+@include mobile() {
+  .font-size-xs { font-size: $font-size-mobile-xs; }
+  .font-size-sm { font-size: $font-size-mobile-sm; }
+  .font-size-md { font-size: $font-size-mobile-md; }
+  .font-size-lg { font-size: $font-size-mobile-lg; }
+  .font-size-xl { font-size: $font-size-mobile-xl; }
+}
+// desktop
+@include desktop() {
+  .font-size-xs { font-size: $font-size-xs; }
+  .font-size-sm { font-size: $font-size-sm; }
+  .font-size-md { font-size: $font-size-md; }
+  .font-size-lg { font-size: $font-size-lg; }
+  .font-size-xl { font-size: $font-size-xl; }
+}
+
+.text-light   { font-family: inherit; }
+.text-regular { font-family: inherit; }
+.text-bold    { font-family: inherit; }

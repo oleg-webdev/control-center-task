@@ -1,0 +1,11 @@
+@import "helpers/helpers";
+
+.pageContainer {
+  display: flex;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

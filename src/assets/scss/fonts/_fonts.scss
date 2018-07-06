@@ -1,0 +1,24 @@
+/*
+To benefit from the newer formats, they should become first in the definition.
+This way the browser picks them up first.
+
+@font-face {
+  font-family: "myfontfamily";
+  src: url("./../assets/fonts/myfontfile.woff2") format("woff2"),
+    url("./../assets/fonts/myfontfile.woff") format("woff"),
+    url("./../assets/fonts/myfontfile.eot") format("embedded-opentype"),
+    url("./../assets/fonts/myfontfile.ttf") format("truetype");
+}
+*/
+
+$OpenSansHebrew-Regular: "./../assets/fonts/OpenSansHebrew/OpenSansHebrew-Regular/OpenSansHebrew-Regular";
+
+@font-face {
+  font-family: "OpenSansHebrew-Regular";
+  //src: url("#{$OpenSansHebrew-Regular}.woff2") format("woff2"),
+  src:
+    url("#{$OpenSansHebrew-Regular}.woff") format("woff"),
+    url("#{$OpenSansHebrew-Regular}.eot") format("embedded-opentype"),
+    url("#{$OpenSansHebrew-Regular}.ttf") format("truetype"),
+    url('#{$OpenSansHebrew-Regular}.svg') format('svg');
+}

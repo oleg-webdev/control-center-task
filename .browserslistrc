@@ -1,0 +1,6 @@
+> 1% # Browser usage over 1%
+Last 4 versions # Or last 2 versions
+IE >= 8 # Or 'IE 8' # Or 'not ie <= 8'
+last 4 Chrome versions
+Firefox > 20
+Opera > 20

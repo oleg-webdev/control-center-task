@@ -1,0 +1,53 @@
+.statusBar {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 26px;
+}
+
+.list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: .6875rem;
+  color: rgba(92, 92, 92, 0.78);
+}
+
+.indicator {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.indicator-grey { background-color: #676767; }
+.indicator-light-blue { background-color: transparentize(#147ef4, .5); }
+.indicator-blue { background-color: #147ef4; }
+.indicator-green { background-color: #00c890; }
+.indicator-red { background-color: #f03a5f; }
+
+.value {
+  margin-right: .25em;
+}
+
+div.lll { // blue icon
+  position: absolute;
+  top: 0;
+  left: 145px;
+  transform: translate(-50%, -50%);
+
+  width: 45px;
+  height: 45px;
+  //mix-blend-mode: undefined;
+  border-radius: 6px;
+  background-color: #1482fd;
+  box-shadow: 0px 15px 29px 0 rgba(51, 70, 85, 0.24);
+}
