@@ -8,20 +8,31 @@ import SidebarProvider from '../../providers/SidebarProvider';
 import CarPathProvider from '../../providers/CarPathProvider';
 import styles from './index.scss';
 
-const { addButtonStyle, SideDrawerWrapper, drawerContent } = styles;
+const { addButtonStyle, sidebarContainer, drawerContent } = styles;
 
 const SideDrawer = () => (
   <Subscribe to={[SidebarProvider, CarPathProvider]}>
     {(sidebar, carpath) => {
       const { state: { carPathPoints, carPath } } = carpath;
       const notAddedItems = differenceBy(carPath, carPathPoints, 'lat');
-      return (
-        !sidebar.state.isOpen ? null : (
-          <div className={SideDrawerWrapper}>
-            <SideDrawerHeader />
+      const containerStyles = {
+        opacity: sidebar.state.isOpen ? 1 : 0,
+        transform: sidebar.state.isOpen
+          ? 'translate(0px)'
+          : 'translate(50%)',
+      };
 
-            <div className={drawerContent}>
-              {carPathPoints.length && (
+      // Or maybe you want to keep it simple:
+      // if (!sidebar.state.isOpen) {
+      //   return null;
+      // }
+
+      return (
+        <div style={containerStyles} className={sidebarContainer}>
+          <SideDrawerHeader />
+
+          <div className={drawerContent}>
+            {carPathPoints.length && (
                 carPathPoints.map(point => (
                   <UserCardItem
                     key={point.lat}
@@ -31,17 +42,16 @@ const SideDrawer = () => (
                 ))
               )}
 
-              {notAddedItems.length ? (
-                <button className={addButtonStyle} onClick={carpath.addToPath}>
+            {notAddedItems.length ? (
+              <button className={addButtonStyle} onClick={carpath.addToPath}>
                   + Add Stop Point
-                </button>
+              </button>
               ) : <p>All points added. Please, remove any card to add new one</p>
             }
 
-            </div>
-
           </div>
-        )
+
+        </div>
       );
     }}
   </Subscribe>

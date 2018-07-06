@@ -42,6 +42,9 @@
 
 
 :global {
+  body {
+    overflow-x: hidden;
+  }
   .nav-link {
     display: block;
     text-align: center;
