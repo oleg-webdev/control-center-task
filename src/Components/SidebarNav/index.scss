@@ -8,6 +8,11 @@
   margin-bottom: 48px;
   cursor: pointer;
 
+  > img {
+    display: block;
+    margin: 0 auto;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -29,3 +34,15 @@
   cursor: pointer;
 }
 
+
+:global {
+  .nav-link {
+    display: block;
+    text-align: center;
+
+    > img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
