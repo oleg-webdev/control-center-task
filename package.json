@@ -25,6 +25,7 @@
     "gulp-gcloud": "^3.0.2",
     "gulp-gzip": "^1.4.0",
     "gutil": "^1.6.4",
+    "lodash": "^4.17.10",
     "moment": "^2.19.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

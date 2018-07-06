@@ -7,13 +7,14 @@ import StatusBar from '../../Components/StatusBar';
 import Map from '../../Components/Map';
 import KpisWidget from '../../Components/KpisWidget';
 import Footer from '../../Components/Footer';
+import styles from './index.scss';
 
 const Dashboard = () => (
   <React.Fragment>
     <Header>
       <MapSearch />
     </Header>
-    <Body>
+    <Body classes={styles.dashboardBody}>
       <Map />
       <KpisWidget />
       <SideDrawer />

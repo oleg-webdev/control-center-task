@@ -11,10 +11,6 @@ export default class SidebarProvider extends Container<SidebarState> {
     carData: {},
   };
 
-  setCar = (data) => {
-    this.setState({ carData: { ...data } });
-  }
-
   toggleSidebar = () => {
     this.setState(prevState => ({
       isOpen: !prevState.isOpen,
