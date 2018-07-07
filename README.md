@@ -17,3 +17,10 @@ Also driver data is just json data.
 
 Testing file located: ```<rootDir>src/providers/sidebar.test.js```
 
+
+#### Disclaimer
+Styles is totally off because of there is no assets or style guides provided
+
+Not sure what functionality was expected, so, I did it as I think it could work
+
+without expireence with 'unstated' lib and google maps
