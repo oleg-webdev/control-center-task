@@ -24,6 +24,8 @@ Driver and path on map is just json data.
 
 Testing file located: ```<rootDir>src/providers/sidebar.test.js```
 
+###DEMO:
+[demo app](http://alicelf.com/) - credentials provided
 
 ### Disclaimer
 
@@ -32,3 +34,4 @@ Not sure what functionality was expected, so, I did it as I think it could work
 Styles is totally off because of there is no assets or style guides provided
 
 I can do fancy styles, I promise =)
+

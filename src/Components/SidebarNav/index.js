@@ -5,8 +5,13 @@ import { Link } from 'react-router-dom';
 
 import SidebarProvider from '../../providers/SidebarProvider';
 import styles from './index.scss';
-
-const imgPath = '../../../src/assets/images/sidebar/';
+import {
+  iconLogo,
+  iconManagement,
+  iconNotification,
+  iconReports,
+  iconUser,
+} from '../../assets/images/sidebar';
 
 type SidebarProps = {
   location: { pathname: string },
@@ -33,7 +38,7 @@ const SidebarNav = ({ location }: SidebarProps) => (
           <Link href="@" to="/" className="nav-link">
             <img
               className={styles.logo}
-              src={`${imgPath}icon-logo.png`}
+              src={iconLogo}
               alt=""
             />
           </Link>
@@ -43,7 +48,7 @@ const SidebarNav = ({ location }: SidebarProps) => (
           <Link href="@" to="/management" className="nav-link">
             <img
               className={styles.managment}
-              src={`${imgPath}icon-managment.png`}
+              src={iconManagement}
               alt=""
             />
           </Link>
@@ -53,21 +58,21 @@ const SidebarNav = ({ location }: SidebarProps) => (
         <li className={styles.item}>
           <img
             className={styles.reports}
-            src={`${imgPath}icon-reports.png`}
+            src={iconReports}
             alt=""
           />
         </li>
         <li className={styles.item}>
           <img
             className={styles.notification}
-            src={`${imgPath}icon-notification.png`}
+            src={iconNotification}
             alt=""
           />
         </li>
         <li className={styles.item}>
           <img
             className={styles.user}
-            src={`${imgPath}icon-user.png`}
+            src={iconUser}
             alt=""
           />
         </li>
