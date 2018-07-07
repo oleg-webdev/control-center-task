@@ -10,6 +10,16 @@ $borderColor: #dfdfdf;
   display: flex;
   flex-flow: column nowrap;
   transition: all .3s;
+
+  > div:last-of-type {
+    height: 100%;
+    overflow: hidden;
+    
+    > div {
+      height: calc(100% - 35px);
+      overflow-y: auto;
+    }
+  }
 }
 
 .defaultCardWrapper {
