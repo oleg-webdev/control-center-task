@@ -1,11 +1,18 @@
 # AutoFleet test assignment
 
 - react custom build
-- Managing state through [unstated lib](https://github.com/jamiebuilds/unstated)
+- Managing app state through [unstated lib](https://github.com/jamiebuilds/unstated)
 
-Task without any provided assets, so there is placeholders instead.
+Unstated providers located: ```<rootDir>src/providers/*```
 
-Also driver data is just json data.
+Pages implemented: 
+
+```<rootDir>src/pages/dashboard``` (last slide)
+
+```<rootDir>src/pages/management```
+
+
+Driver and path on map is just json data.
 
 ## Getting Started
 ```npm install``` or just ```yarn```
@@ -18,9 +25,12 @@ Also driver data is just json data.
 Testing file located: ```<rootDir>src/providers/sidebar.test.js```
 
 
-#### Disclaimer
-Styles is totally off because of there is no assets or style guides provided
+### Disclaimer
 
 Not sure what functionality was expected, so, I did it as I think it could work
 
 without expireence with 'unstated' lib and google maps
+
+Styles is totally off because of there is no assets or style guides provided
+
+I can do fancy styles, I promise =)

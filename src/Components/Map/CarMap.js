@@ -24,7 +24,7 @@ const CarMap = withScriptjs(withGoogleMap(({
     url: activePointer,
     size: new google.maps.Size(45, 45),
     origin: new google.maps.Point(0, 0),
-    anchor: new google.maps.Point(20, 18),
+    anchor: new google.maps.Point(22, 22),
   };
   /* eslint-enable */
   return (
