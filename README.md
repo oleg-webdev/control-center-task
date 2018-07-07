@@ -24,7 +24,7 @@ Driver and path on map is just json data.
 
 Testing file located: ```<rootDir>src/providers/sidebar.test.js```
 
-###DEMO:
+### DEMO:
 [demo app](http://alicelf.com/) - credentials provided
 
 ### Disclaimer
