@@ -29,12 +29,22 @@ const Map = () => (
               <div>
                 <p>Sidebar is {sidebarState}, so</p>
                 <h2>there should be map with all cars data, </h2>
-                <p>but not implemented, since this part is not in task mission.</p>
+                <p>but is not implemented, since goal of this screen </p>
+                <p>is the last slide from presentation</p>
+                <p>
+                  Active screens: dashboard: <b>/</b> and management: <b>/management</b>
+                </p>
                 <p>click to button on SidebarNav to toggle a vehicle details</p>
+                <p>Or folder icon to navigate to management</p>
                 <hr />
                 <small>
                   Data flow has been handled thru {"'unstated'"} lib per requirements
                 </small>
+                <p>
+                  <small>
+                  Styles is totally off because of there is no assets provided
+                  </small>
+                </p>
               </div>
             </div>
           )

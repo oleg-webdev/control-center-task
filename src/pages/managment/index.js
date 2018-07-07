@@ -1,16 +1,19 @@
 import React from 'react';
-import Header from '../../Components/Header';
-import Body from '../../Components/Body';
+import { Subscribe } from 'unstated';
 
-const Dashboard = () => (
-  <React.Fragment>
-    <Header>
-      <p>Header Text</p>
-    </Header>
-    <Body>
-      <p>Body text</p>
-    </Body>
-  </React.Fragment>
+import UserDataProvider from '../../providers/UserDataProvider';
+import ManagementComponent from './ManagementComponent';
+
+
+const Management = () => (
+  <Subscribe to={[UserDataProvider]}>
+    {
+      // Wrap it into subscription to UserDataProvider
+      // I guess this is the way I can have access to
+      // Lifecycle methods
+      userdata => <ManagementComponent dataProvider={userdata} />
+    }
+  </Subscribe>
 );
 
-export default Dashboard;
+export default Management;

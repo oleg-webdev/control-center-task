@@ -1,0 +1,45 @@
+.managementContainer {}
+
+.managementBody {
+  padding: 50px 20px 20px;
+}
+
+.userCard {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 3px 15px rgba(204, 204, 204, 0.829);
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  > div, > span {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+
+    &:last-of-type {
+      margin-left: auto;
+    }
+  }
+}
+
+.addAUserButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-45px, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #1482fd;
+  box-shadow: 0px 15px 29px 0 rgba(51, 70, 85, 0.24);
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+}
+
